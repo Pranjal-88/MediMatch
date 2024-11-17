@@ -6,9 +6,10 @@ MediMatch is a command-line tool designed to suggest alternative medicines for p
 
 ## **Features**
 
-- **Smart Clustering**: Groups medicines based on chemical composition, category, and treatment type.  
+- **Smart Clustering**: Groups medicines based on chemical composition, usage, and reviews.  
 - **Alternative Finder**: Suggests similar medicines when a preferred one is not available.  
-- **Extensible Dataset**: Add new data easily to expand the system’s functionality.  
+- **Review-Based Suggestions**: Considers excellent, average, and poor reviews to enhance recommendation quality.  
+- **Extensible Dataset**: Easily add new data to expand the system’s functionality.  
 
 ---
 
@@ -26,12 +27,11 @@ MediMatch is a command-line tool designed to suggest alternative medicines for p
 
 The dataset (`medicines.csv`) should have the following structure:
 
-| Medicine Name | Category      | Chemical Composition | Treatment Type | Side Effects |  
-|---------------|---------------|----------------------|----------------|--------------|  
-| MedicineA     | Allergy       | CompoundX, CompoundY | Skin Allergy   | Drowsiness   |  
-| MedicineB     | Pain Relief   | CompoundZ            | Headache       | Nausea       |  
+| Medicine Name            | Main Element  | Numeric Value | Uses                          | Side Effects          | Image URL                                     | Manufacturer                      | Excellent Review % | Average Review % | Poor Review % |  
+|---------------------------|---------------|---------------|-------------------------------|-----------------------|-----------------------------------------------|-----------------------------------|---------------------|-------------------|---------------|  
+| Avastin 400mg Injection   | Bevacizumab   | 400mg         | Cancer of colon and rectum...| Rectal bleeding, ...  | https://onemg.gumlet.io/l_watermark_346,w... | Roche Products India Pvt Ltd      | 22                  | 56                | 22            |  
+| Augmentin 625 Duo Tablet  | Amoxycillin   | 500mg         | Treatment of Bacterial...    | Vomiting, Nausea,...  | https://onemg.gumlet.io/l_watermark_346,w... | Glaxo SmithKline Pharmaceuticals  | 47                  | 35                | 18            |  
 
-Place this file in the `data/` folder before running the project.
 
 ---
 
@@ -44,5 +44,5 @@ Place this file in the `data/` folder before running the project.
 ### Steps to Set Up
 1. **Clone the Repository**  
    ```bash
-   git clone https://github.com/yourusername/MediMatch.git
+   git clone https://github.com/Pranjal-88/MediMatch.git
    cd MediMatch
