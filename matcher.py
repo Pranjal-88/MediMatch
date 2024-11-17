@@ -36,7 +36,7 @@ def get_most_similar_medicine(query_medicine):
     
     return closest_medicine
 
-query_medicine = "Acemiz-S Tablet"
+query_medicine = "Zincold Tablet"
 try:
     most_similar_medicine = get_most_similar_medicine(query_medicine)
     print(f"The most similar medicine to {query_medicine} is {most_similar_medicine}.")
