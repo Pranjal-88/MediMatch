@@ -52,10 +52,6 @@ The dataset (`medicines.csv`) should have the following structure:
 ## **How to Run**
 
 1. **Open the runner.py file**
-   ```bash
-   nano runner.py
-   # or use your preferred text editor
-   ```
 
 2. **Modify the Query Medicine**
    - Locate the `query_medicine` variable in `runner.py`
@@ -70,27 +66,16 @@ The dataset (`medicines.csv`) should have the following structure:
    ```
 
 4. **View Results**
-   - The program will display a list of alternative medicines
-   - Results are sorted by similarity score
-   - Each suggestion includes key details like main element, manufacturer, and review scores
+   - The program will display the closest alternative medicine on the terminal.
+
 
 ## **Example Usage**
 
 ```python
 # In runner.py
-query_medicine = "Augmentin 625 Duo Tablet"
+query_medicine = "Zincold Tablet"
 
-# Output will show alternatives like:
-# 1. Medicine Name: Moxikind CV 625 Tablet
-#    Similarity Score: 0.89
-#    Manufacturer: Mankind Pharma Ltd
-#    ...
+# Output will be shown like:
 ```
+![image](https://github.com/user-attachments/assets/14e773a3-96f0-4048-9139-d075db3f2c13)
 
-## **Contributing**
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## **License**
-
-This project is licensed under the MIT License - see the LICENSE file for details.
